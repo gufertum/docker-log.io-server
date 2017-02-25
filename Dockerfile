@@ -3,7 +3,8 @@ FROM debian:jessie
 RUN apt-get update
 
 # Install curl and nodejs
-RUN apt-get -y install curl && curl -sL https://deb.nodesource.com/setup | bash -
+#RUN apt-get -y install curl && curl -sL https://deb.nodesource.com/setup | bash -
+RUN apt-get -y install curl && curl -sL https://deb.nodesource.com/setup_6.x | bash -
 
 # Add requirements, add user and install log.io
 RUN apt-get -y install adduser make gcc g++ nodejs
